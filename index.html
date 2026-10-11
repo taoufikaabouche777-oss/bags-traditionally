@@ -167,6 +167,13 @@ label.f{display:grid;gap:4px;font-size:.88rem;color:var(--dust);margin-bottom:10
   .card .info{padding:10px 12px 12px}
   .card .name{font-size:.92rem}
 }
+.ty{text-align:center;padding-block:6px 4px}
+.ty-icon{font-size:2.6rem;line-height:1;width:72px;height:72px;border-radius:50%;display:grid;place-items:center;margin:0 auto 10px;background:var(--hide-3);border:1.5px dashed var(--stitch);animation:ty-pop .5s ease-out}
+.ty h3{font-family:var(--f-display);font-weight:800;font-size:1.35rem;margin:0 0 6px;text-wrap:balance}
+.ty p{color:var(--dust);margin:0 auto 12px;max-width:36ch}
+.ty-box{background:var(--hide-3);border-radius:14px;padding:12px 14px;margin-bottom:8px}
+.ty-line{display:flex;justify-content:space-between;gap:12px;padding-block:3px}
+@keyframes ty-pop{from{transform:scale(.6);opacity:0}to{transform:scale(1);opacity:1}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
 </style>
 </head>
@@ -200,19 +207,19 @@ var T={
   whyEyebrow:'علاش الجلد الطبيعي',whyTitle:'كيتعاش معاه، ماشي كيتبدل',
   why:[['كيزيان مع الوقت','الجلد الطبيعي كياخد لون أعمق ولمعة خاصة كل ما استعملتيه. الصاك ديالك كيولي فريد.'],['كيصبر','ماشي بحال السينتيتيك اللي كيتقشر. الجلد الحقيقي كيقاوم الاستعمال اليومي سنين.'],['كتعرفو بالريحة واللمسة','ريحة الجلد ونعومتو تحت اليد هوما الدليل. مستورد من أوروبا ومختار بعناية.']],
   waLine:'الطلبات والأسئلة فالواتساب:',close:'سد',soldNote:'هاد الموديل سالا دابا. سولنا فالواتساب على شي حاجة بحالو.',soonNote:'هاد الموديل غادي يكون متوفر قريبا.',ask:'سول فالواتساب',addCart:'زيد للسلة',orderWa:'اطلب دابا فالواتساب',added:'تزاد للسلة',
-  emptyCart:'السلة خاوية. اختار شي صاك من المجموعة.',total:'المجموع',fName:'الاسم الكامل',fCity:'المدينة',fAddr:'العنوان',fPhone:'رقم الهاتف',fErr:'عمّر الاسم والمدينة ورقم الهاتف باش نكملو الطلب.',send:'أكد الطلب فالواتساب',sendNote:'غادي يتحل الواتساب برسالة التأكيد واجدة، غير صيفطها. الدفع عند الاستلام.',less:'نقص',more:'زيد',cur:'درهم',
+  emptyCart:'السلة خاوية. اختار شي صاك من المجموعة.',total:'المجموع',fName:'الاسم الكامل',fCity:'المدينة',fAddr:'العنوان',fPhone:'رقم الهاتف',fErr:'عمّر الاسم والمدينة ورقم الهاتف باش نكملو الطلب.',send:'أكد الطلب فالواتساب',confirmTitle:'تأكيد الطلب',confirmIntro:'عمّر المعلومات ديالك باش نوصلو ليك الطلب. الدفع عند الاستلام.',sentTitle:'بقات خطوة وحدة',sentNote:'تحل الواتساب فيه رسالة التأكيد بكل المعلومات ديالك. غير ضغط صيفط باش يتأكد الطلب.',resend:'حل الواتساب مرة أخرى',tyTitle:'شكرا على الثقة ديالك',tyOrder:'توصلنا بالطلب ديالك. غادي نتاصلو بيك قريبا فالواتساب باش نأكدو معاك التوصيل.',tyStep:'ما تنساش تضغط صيفط فالواتساب باش يوصلنا الطلب.',tyAskTitle:'شكرا على الاستفسار ديالك',tyAsk:'تحل ليك الواتساب. صيفط السؤال ديالك وغادي نجاوبوك فأقرب وقت.',tySummary:'ملخص الطلب',back:'رجع للمتجر',fPhoneErr:'رقم الهاتف ماشي صحيح.',sendNote:'غادي يتحل الواتساب برسالة التأكيد واجدة، غير صيفطها. الدفع عند الاستلام.',less:'نقص',more:'زيد',cur:'درهم',
   m:{hi:'السلام عليكم',confirm1:'بغيت نأكد الطلب ديال هاد المنتوج:',confirmN:'بغيت نأكد هاد الطلب:',product:'المنتوج',price:'الثمن',qty:'الكمية',total:'المجموع',name:'الاسم',city:'المدينة',addr:'العنوان',phone:'الهاتف',end1:'واش متوفر؟ عافاك أكد ليا الطلب.',endN:'عافاك أكد ليا الطلب. شكرا!',askP:'بغيت نسول على هاد المنتوج:',general:'عندي سؤال على الصاكات ديالكم.'}},
  fr:{cart:'Panier',seeAll:'Voir la collection',askWa:'Écrivez-nous sur WhatsApp',heroImg:'Image principale',heroImgSub:'apparaîtra ici',collEyebrow:'La collection',collTitle:'Choisissez votre sac',all:'Tout',photo:'Photo',soon:'bientôt',soldTag:'Épuisé',saleTag:'Promo',priceSoon:'Prix bientôt',newModel:'Nouveau modèle',vidEyebrow:'De près',vidTitle:'Voyez le cuir de vos yeux',video:'Vidéo',
   whyEyebrow:'Pourquoi le cuir naturel',whyTitle:'Un sac qui vieillit avec vous',
   why:[['Il embellit avec le temps','Le cuir naturel prend une couleur plus profonde et une belle patine à l’usage. Votre sac devient unique.'],['Il dure','Contrairement au synthétique qui s’écaille, le vrai cuir résiste des années à l’usage quotidien.'],['On le reconnaît au toucher','Son odeur et sa douceur sous la main ne trompent pas. Importé d’Europe et choisi avec soin.']],
   waLine:'Commandes et questions sur WhatsApp :',close:'Fermer',soldNote:'Ce modèle est épuisé. Écrivez-nous sur WhatsApp pour un modèle similaire.',soonNote:'Ce modèle sera bientôt disponible.',ask:'Demander sur WhatsApp',addCart:'Ajouter au panier',orderWa:'Commander sur WhatsApp',added:'Ajouté au panier',
-  emptyCart:'Votre panier est vide. Choisissez un sac dans la collection.',total:'Total',fName:'Nom complet',fCity:'Ville',fAddr:'Adresse',fPhone:'Téléphone',fErr:'Indiquez votre nom, votre ville et votre téléphone pour finaliser.',send:'Confirmer sur WhatsApp',sendNote:'WhatsApp s’ouvre avec le message de confirmation prêt, il suffit de l’envoyer. Paiement à la livraison.',less:'Moins',more:'Plus',cur:'DH',
+  emptyCart:'Votre panier est vide. Choisissez un sac dans la collection.',total:'Total',fName:'Nom complet',fCity:'Ville',fAddr:'Adresse',fPhone:'Téléphone',fErr:'Indiquez votre nom, votre ville et votre téléphone pour finaliser.',send:'Confirmer sur WhatsApp',confirmTitle:'Confirmation de commande',confirmIntro:'Remplissez vos informations pour la livraison. Paiement à la livraison.',sentTitle:'Plus qu’une étape',sentNote:'WhatsApp s’est ouvert avec votre message de confirmation et vos informations. Appuyez sur Envoyer pour confirmer la commande.',resend:'Rouvrir WhatsApp',tyTitle:'Merci pour votre confiance',tyOrder:'Nous avons bien reçu votre commande. Nous vous contacterons très vite sur WhatsApp pour confirmer la livraison.',tyStep:'N’oubliez pas d’appuyer sur Envoyer dans WhatsApp pour que la commande nous parvienne.',tyAskTitle:'Merci pour votre message',tyAsk:'WhatsApp s’est ouvert. Envoyez votre question, nous vous répondons au plus vite.',tySummary:'Récapitulatif',back:'Retour à la boutique',fPhoneErr:'Numéro de téléphone invalide.',sendNote:'WhatsApp s’ouvre avec le message de confirmation prêt, il suffit de l’envoyer. Paiement à la livraison.',less:'Moins',more:'Plus',cur:'DH',
   m:{hi:'Bonjour',confirm1:'Je souhaite confirmer la commande de ce produit :',confirmN:'Je souhaite confirmer cette commande :',product:'Produit',price:'Prix',qty:'Quantité',total:'Total',name:'Nom',city:'Ville',addr:'Adresse',phone:'Téléphone',end1:'Est-il disponible ? Merci de confirmer ma commande.',endN:'Merci de confirmer ma commande !',askP:'J’ai une question sur ce produit :',general:'J’ai une question sur vos sacs.'}},
  en:{cart:'Cart',seeAll:'See the collection',askWa:'Message us on WhatsApp',heroImg:'Main image',heroImgSub:'will appear here',collEyebrow:'The collection',collTitle:'Choose your bag',all:'All',photo:'Photo',soon:'coming soon',soldTag:'Sold out',saleTag:'Sale',priceSoon:'Price coming soon',newModel:'New model',vidEyebrow:'Up close',vidTitle:'See the leather for yourself',video:'Video',
   whyEyebrow:'Why natural leather',whyTitle:'A bag that ages with you',
   why:[['It gets better with time','Natural leather deepens in colour and develops a patina as you use it. Your bag becomes one of a kind.'],['It lasts','Unlike synthetic leather that peels, real leather stands up to daily use for years.'],['You know it by touch','Its scent and softness tell you it’s real. Imported from Europe and carefully selected.']],
   waLine:'Orders and questions on WhatsApp:',close:'Close',soldNote:'This model is sold out. Message us on WhatsApp for something similar.',soonNote:'This model will be available soon.',ask:'Ask on WhatsApp',addCart:'Add to cart',orderWa:'Order on WhatsApp',added:'Added to cart',
-  emptyCart:'Your cart is empty. Pick a bag from the collection.',total:'Total',fName:'Full name',fCity:'City',fAddr:'Address',fPhone:'Phone number',fErr:'Please fill in your name, city and phone to complete the order.',send:'Confirm on WhatsApp',sendNote:'WhatsApp opens with the confirmation message ready — just send it. Cash on delivery.',less:'Less',more:'More',cur:'MAD',
+  emptyCart:'Your cart is empty. Pick a bag from the collection.',total:'Total',fName:'Full name',fCity:'City',fAddr:'Address',fPhone:'Phone number',fErr:'Please fill in your name, city and phone to complete the order.',send:'Confirm on WhatsApp',confirmTitle:'Order confirmation',confirmIntro:'Fill in your details for delivery. Cash on delivery.',sentTitle:'One last step',sentNote:'WhatsApp opened with your confirmation message and details. Tap Send to confirm the order.',resend:'Open WhatsApp again',tyTitle:'Thank you for your trust',tyOrder:'We have received your order. We will contact you on WhatsApp shortly to confirm delivery.',tyStep:'Don’t forget to tap Send in WhatsApp so your order reaches us.',tyAskTitle:'Thank you for your message',tyAsk:'WhatsApp is open. Send us your question and we will reply as soon as we can.',tySummary:'Order summary',back:'Back to the shop',fPhoneErr:'That phone number doesn’t look right.',sendNote:'WhatsApp opens with the confirmation message ready — just send it. Cash on delivery.',less:'Less',more:'More',cur:'MAD',
   m:{hi:'Hello',confirm1:'I would like to confirm my order for this product:',confirmN:'I would like to confirm this order:',product:'Product',price:'Price',qty:'Quantity',total:'Total',name:'Name',city:'City',addr:'Address',phone:'Phone',end1:'Is it available? Please confirm my order.',endN:'Please confirm my order. Thank you!',askP:'I have a question about this product:',general:'I have a question about your bags.'}}
 };
 function t(k){return T[lang][k]}
@@ -249,11 +256,8 @@ function cartCount(){return cart.reduce(function(a,i){return a+i.q},0)}
 function pageUrl(){return location.origin&&location.origin!=='null'?location.origin+location.pathname:''}
 
 /* ---------- WhatsApp confirmation messages ---------- */
-function msgOne(p,q){var m=t('m');var L2=[m.hi+' '+S.settings.name+' 👋','',m.confirm1,'','🛍️ '+m.product+': '+pname(p),'💰 '+m.price+': '+num(p.price)+' '+cur(),'🔢 '+m.qty+': '+q];
- if(q>1)L2.push('🧾 '+m.total+': '+num(p.price*q)+' '+cur());
- L2.push('',m.end1);var u=pageUrl();if(u)L2.push('',u);return L2.join('\n')}
-function msgCart(v){var m=t('m'),tot=0;var L2=[m.hi+' '+S.settings.name+' 👋','',m.confirmN,''];
- cart.forEach(function(it){var p=prod(it.id);if(!p)return;tot+=p.price*it.q;L2.push('🛍️ '+pname(p)+' × '+it.q+' — '+num(p.price*it.q)+' '+cur())});
+function msgOrder(items,v){var m=t('m'),tot=0;var L2=[m.hi+' '+S.settings.name+' 👋','',items.length===1?m.confirm1:m.confirmN,''];
+ items.forEach(function(it){var p=prod(it.id);if(!p)return;tot+=p.price*it.q;L2.push('🛍️ '+pname(p)+' × '+it.q+' — '+num(p.price*it.q)+' '+cur())});
  L2.push('','🧾 '+m.total+': '+num(tot)+' '+cur(),'','👤 '+m.name+': '+v.name,'📍 '+m.city+': '+v.city);
  if(v.addr)L2.push('🏠 '+m.addr+': '+v.addr);
  L2.push('📞 '+m.phone+': '+v.phone,'',m.endN);return L2.join('\n')}
@@ -323,7 +327,7 @@ function openProduct(id){
   if(p.soldOut||!p.price){h+='<p class="note">'+(p.soldOut?t('soldNote'):t('soonNote'))+'</p>'+(waNum()?'<a class="cta" data-act="wa" target="_blank" rel="noopener" href="'+waLink(msgAsk(p))+'">'+t('ask')+'</a>':'')}
   else{
     h+='<div class="row" style="margin-top:8px"><div class="qty"><button data-act="dq" data-v="-1" aria-label="'+t('less')+'">−</button><span id="dq">1</span><button data-act="dq" data-v="1" aria-label="'+t('more')+'">+</button></div><button class="cta ghost" style="flex:1;justify-content:center" data-act="add" data-id="'+p.id+'">'+t('addCart')+'</button></div>';
-    if(waNum())h+='<a class="cta wa" id="wa-one" data-act="waone" data-id="'+p.id+'" target="_blank" rel="noopener" href="'+waLink(msgOne(p,1))+'">'+t('orderWa')+'</a>';
+    if(waNum())h+='<button class="cta wa" data-act="buynow" data-id="'+p.id+'">'+t('orderWa')+'</button>';
   }
   openSheet(h);
 }
@@ -334,19 +338,44 @@ function openCart(){
   cart.forEach(function(it){var p=prod(it.id);if(!p)return;tot+=p.price*it.q;
     h+='<div class="line-item"><div class="thumb">'+(p.images[0]?'<img src="'+p.images[0]+'" alt="">':'')+'</div><div style="min-width:0"><div style="font-weight:700">'+esc(pname(p))+'</div><div class="price">'+money(p.price)+'</div></div><div class="qty"><button data-act="cq" data-id="'+p.id+'" data-v="-1" aria-label="'+t('less')+'">−</button><span>'+it.q+'</span><button data-act="cq" data-id="'+p.id+'" data-v="1" aria-label="'+t('more')+'">+</button></div></div>'});
   h+='<div class="total"><span>'+t('total')+'</span><span class="price">'+money(tot)+'</span></div>';
-  h+='<form id="order" novalidate><label class="f">'+t('fName')+'<input id="o-name" required autocomplete="name"></label><label class="f">'+t('fCity')+'<input id="o-city" required autocomplete="address-level2"></label><label class="f">'+t('fAddr')+'<input id="o-addr" autocomplete="street-address"></label><label class="f">'+t('fPhone')+'<input id="o-phone" inputmode="tel" required autocomplete="tel" dir="ltr"></label>';
-  h+='<p class="note" id="o-err" hidden style="color:var(--bad)">'+t('fErr')+'</p>';
+  h+='<button class="cta wa" style="width:100%;justify-content:center;border:0" data-act="checkout">'+t('confirmTitle')+'</button>';
+  openSheet(h);
+}
+
+var checkoutItems=[];
+function openCheckout(items){
+  checkoutItems=items.filter(function(i){return prod(i.id)});if(!checkoutItems.length)return;
+  track('InitiateCheckout');
+  var tot=0,h='<div class="sheet-head"><h3>'+t('confirmTitle')+'</h3><button class="x" data-act="close" aria-label="'+t('close')+'">✕</button></div>';
+  checkoutItems.forEach(function(it){var p=prod(it.id);tot+=p.price*it.q;
+    h+='<div class="line-item" style="grid-template-columns:56px 1fr auto"><div class="thumb">'+(p.images[0]?'<img src="'+p.images[0]+'" alt="">':'')+'</div><div style="min-width:0"><div style="font-weight:700">'+esc(pname(p))+'</div><div class="note">'+money(p.price)+' × '+it.q+'</div></div><div class="price">'+money(p.price*it.q)+'</div></div>'});
+  h+='<div class="total"><span>'+t('total')+'</span><span class="price">'+money(tot)+'</span></div>';
+  h+='<p class="note" style="margin-top:0">'+t('confirmIntro')+'</p>';
+  h+='<form id="order" novalidate><label class="f">'+t('fName')+' *<input id="o-name" required autocomplete="name"></label><label class="f">'+t('fPhone')+' *<input id="o-phone" type="tel" inputmode="tel" required autocomplete="tel" dir="ltr" placeholder="06 XX XX XX XX"></label><label class="f">'+t('fCity')+' *<input id="o-city" required autocomplete="address-level2"></label><label class="f">'+t('fAddr')+'<input id="o-addr" autocomplete="street-address"></label>';
+  h+='<p class="note" id="o-err" hidden style="color:var(--bad)"></p>';
   h+='<button class="cta wa" style="width:100%;justify-content:center;border:0" type="submit">'+t('send')+'</button><p class="note">'+t('sendNote')+'</p></form>';
   openSheet(h);
   var saved={};try{saved=JSON.parse(localStorage.getItem('bt-cust')||'{}')}catch(e){}
   ['name','city','addr','phone'].forEach(function(k){var el=document.getElementById('o-'+k);if(el&&saved[k])el.value=saved[k]});
   document.getElementById('order').addEventListener('submit',function(e){e.preventDefault();
-    var v={};['name','city','addr','phone'].forEach(function(k){v[k]=document.getElementById('o-'+k).value.trim()});
-    if(!v.name||!v.city||!v.phone){document.getElementById('o-err').hidden=false;return}
-    try{localStorage.setItem('bt-cust',JSON.stringify(v))}catch(e){}
-    track('Order');
-    var a=document.createElement('a');a.href=waLink(msgCart(v));a.target='_blank';a.rel='noopener';document.body.appendChild(a);a.click();a.remove();
+    var v={},err=document.getElementById('o-err');['name','city','addr','phone'].forEach(function(k){v[k]=document.getElementById('o-'+k).value.trim()});
+    if(!v.name||!v.city||!v.phone){err.textContent=t('fErr');err.hidden=false;return}
+    if(v.phone.replace(/\D/g,'').length<9){err.textContent=t('fPhoneErr');err.hidden=false;return}
+    try{localStorage.setItem('bt-cust',JSON.stringify(v))}catch(x){}
+    var p0=checkoutItems.length===1?prod(checkoutItems[0].id):null;
+    track('Order',p0,p0?checkoutItems[0].q:0);
+    var link=waLink(msgOrder(checkoutItems,v));
+    var a=document.createElement('a');a.href=link;a.target='_blank';a.rel='noopener';document.body.appendChild(a);a.click();a.remove();
+    var fromCart=checkoutItems.length===cart.length&&checkoutItems.every(function(i){return cart.some(function(c){return c.id===i.id&&c.q===i.q})});
+    var sum=checkoutItems.map(function(it){var p=prod(it.id);return '<div class="ty-line"><span>'+esc(pname(p))+' × '+it.q+'</span><span class="price">'+money(p.price*it.q)+'</span></div>'}).join('');
+    var total=checkoutItems.reduce(function(a,it){return a+prod(it.id).price*it.q},0);
+    if(fromCart){cart=[];saveCart();render()}
+    thankYou(t('tyTitle'),t('tyOrder'),'<div class="ty-box"><div class="note" style="margin-bottom:6px">'+t('tySummary')+'</div>'+sum+'<div class="ty-line" style="font-weight:800"><span>'+t('total')+'</span><span class="price">'+money(total)+'</span></div><div class="note" style="margin-top:6px">'+esc(v.name)+' · '+esc(v.city)+' · <span dir="ltr">'+esc(v.phone)+'</span></div></div><p class="note">'+t('tyStep')+'</p><a class="cta wa" target="_blank" rel="noopener" href="'+link+'">'+t('resend')+'</a>');
   });
+}
+
+function thankYou(title,text,extra){
+  openSheet('<div class="ty"><div class="ty-icon" aria-hidden="true">🙏</div><h3>'+title+'</h3><p>'+text+'</p></div>'+(extra||'')+'<button class="cta ghost" style="width:100%;justify-content:center;margin-top:10px" data-act="close">'+t('back')+'</button>');
 }
 
 /* ---------- admin (always Arabic) ---------- */
@@ -444,10 +473,11 @@ function onClick(e){
   if(a==='open'){openProduct(b.dataset.id);return}
   if(a==='close'){closeOverlay();return}
   if(a==='scroll'){document.getElementById('collection').scrollIntoView({behavior:'smooth'});return}
-  if(a==='cart'){if(cart.length)track('InitiateCheckout');openCart();return}
-  if(a==='wa'){track('Contact');return}
-  if(a==='waone'){var po=prod(b.dataset.id);b.href=waLink(msgOne(po,detailQty));track('Order',po,detailQty);return}
-  if(a==='dq'){detailQty=Math.max(1,detailQty+Number(b.dataset.v));document.getElementById('dq').textContent=detailQty;var w=document.getElementById('wa-one');if(w)w.href=waLink(msgOne(prod(w.dataset.id),detailQty));return}
+  if(a==='cart'){openCart();return}
+  if(a==='wa'){track('Contact');setTimeout(function(){thankYou(t('tyAskTitle'),t('tyAsk'))},300);return}
+  if(a==='buynow'){openCheckout([{id:b.dataset.id,q:detailQty}]);return}
+  if(a==='checkout'){openCheckout(cart.slice());return}
+  if(a==='dq'){detailQty=Math.max(1,detailQty+Number(b.dataset.v));document.getElementById('dq').textContent=detailQty;return}
   if(a==='add'){var ex=cart.filter(function(i){return i.id===b.dataset.id})[0];if(ex)ex.q+=detailQty;else cart.push({id:b.dataset.id,q:detailQty});saveCart();track('AddToCart',prod(b.dataset.id),detailQty);closeOverlay();render();toast(t('added'));return}
   if(a==='cq'){var it=cart.filter(function(i){return i.id===b.dataset.id})[0];if(it){it.q+=Number(b.dataset.v);if(it.q<1)cart=cart.filter(function(i){return i!==it})}saveCart();render();openCart();return}
   if(!canEdit)return;
